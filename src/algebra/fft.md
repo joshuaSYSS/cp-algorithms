@@ -279,7 +279,7 @@ The only thing we have to do afterwards, is to normalize the number:
 
 ```cpp
     int carry = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++){
         result[i] += carry;
         carry = result[i] / 10;
         result[i] %= 10;
